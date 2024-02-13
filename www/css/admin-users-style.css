@@ -1,0 +1,162 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr {
+	transition: all .25s ease-in-out;
+}
+tr:hover {
+	background-color: #EEE;
+	cursor: pointer;
+}
+
+/*-------------------------------SIDEBAR-------------------------------*/
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #333;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: white;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color:  #f1f1f1;
+  color: black;
+}
+    
+.wrapper .sidebar ul li:hover a{
+	background-color:  #f1f1f1;
+	color: black;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  display: flex;
+  margin-left: 200px;
+}
+/*------------------------------------------------------------------*/
+
+/*-------------------------------VIEW-------------------------------*/
+.administration-table-content {
+	flex: 52.5%;
+	padding: 20px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 5%;
+	margin-right: 2.5%;
+	background-color: white;
+}
+
+.administration-edit-content {
+	flex: 32.5%;
+	padding: 20px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 2.5%;
+	margin-right: 5%;
+	background-color: white;
+}
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------ADMINISTRATION INPUT--------------------------------*/
+.administration-input-group {
+	margin: 10px 0px 10px 0px;
+	text-align: center;
+}
+
+.administration-input-group label {
+	display: block;
+	text-align: left;
+	margin-left: 5%;
+}
+
+.administration-input-group input {
+	height: 30px;
+	width: 90%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+.administration-send-content-btn {
+	display: inline;
+	margin-left: 5%;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	border: none;
+	background: #333;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.administration-send-content-btn:hover {
+	background: gray;
+}
+
+/*-------------------------------------------------------------------------*/
+
+@media screen and (max-width: 730px) {
+	.administration-table-content {
+		flex: 90%;
+		margin-left: 5%;
+		margin-right:5%;
+	}
+	.administration-edit-content {
+		flex: 90%;
+		margin-left: 5%;
+		margin-right:5%;
+	}
+}
+
+
+

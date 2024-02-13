@@ -1,0 +1,52 @@
+body{
+	background-color: #f3f5f9;
+	margin: 0;
+}
+
+.header {
+	background-color: #fff;
+	color: #717171;
+	padding: 20px;
+	text-align: center;
+}
+
+.menu-buttons{
+	display: flex;
+	padding: 50px;
+}
+
+.mybutton {
+	background-color: #333;
+	border: none;
+	color: white;
+	padding: 30px 30px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 80px;
+	margin: 0;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.mybutton:hover {
+	background-color:  #ddd;
+	color: black;
+}
+
+#users{
+	flex:30%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#products{
+	flex: 20%;
+}
+#contact{
+	flex:30%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#logout{
+	position: absolute;
+	margin-top: 240px;
+	margin-left: 38%;
+}

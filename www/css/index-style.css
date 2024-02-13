@@ -1,0 +1,390 @@
+* {
+	/*The width and height properties (and min/max properties) includes content, padding and border*/
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial;
+	font-size: 125%;
+	margin: 0;
+}
+
+.head-note {
+	padding: 1px; /*Adding the padding to remove gap collisions of margin*/
+	background: yellow;
+	text-align: center;
+}
+
+/*---------------------------HEADER------------------------------------*/
+.header {
+	padding: 1px; /*Adding the padding to remove gap collisions of margin*/
+	height: 420px;
+	text-align: center;
+	background-image: url("../images/Construction-material.png");
+	color: white;
+}
+/*---------------------------HEADER------------------------------------*/
+
+/*------------------------------------NAVBAR-------------------------------*/
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	background-color: #333;
+	position: sticky; /*When scrolling down the navbar will remain up*/
+	top: 0;
+	z-index: 1;
+}
+
+.navbar a {
+	color: white;
+	padding: 18px 40px;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+}
+
+.dropdown {
+	position: relative; /*Position relative so the dropdown-content can be absolute to this*/
+	text-align: center;
+}
+
+.dropbtn {
+	background-color: inherit;
+	color: white;
+	padding: 12px 20px;
+	font-size: 30px;
+	text-decoration: none;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+}
+
+.dropdown-content {
+	display: none; /*Stay hidden when not hovered*/
+	position: absolute;
+	right: 0;
+	background-color: #f9f9f9;
+	min-width: 120px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1; /*Dropdown be in front of other buttons*/
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	text-align: right;
+	display: block;
+}
+
+/* Change color on hover over buttons in navbar*/
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #ddd;
+	color: black;
+}
+
+/*When hovered over buttons the dropdown-content appears*/
+.dropdown:hover .dropdown-content {display: block;}
+
+/*When hovered over links in dropdown change color*/
+.dropdown-content a:hover {background-color: #f1f1f1;}
+/*----------------------------------------------------------------------------*/
+
+/*----------------------PREMIUM && ABOUT ROW----------------------------------*/
+.prem-prod {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #f1f1f1;
+}
+
+.about {
+	flex: 35%;
+	padding: 20px;
+	margin-left: 5%;
+}
+.about p {
+	color: gray;
+	margin: 0;
+	margin-bottom:20px;
+}
+.about h4{
+	margin: 0;
+}
+
+.btnAbout {
+	background-color: white;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+	border: none;
+	border-radius: 2px;
+	color: black;
+	padding: 12px 24px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+.btnAbout:hover {
+	background-color: black;
+	color: white;
+}
+
+.premium {
+	flex: 55%;
+	padding: 20px;
+	margin-right: 5%;
+}
+/*----------------------------------------------------------------------*/
+
+/*----------------------GALLERY STANDARD--------------------------------*/
+.gallery {
+	margin: 5px;
+	background-color: white;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+	width: 180px;
+	min-height: 260px;
+	float: left;
+}
+
+.gallery:hover {
+	box-shadow: 1px 4px 8px rgba(0, 0, 0, .5);
+}
+
+.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+.gallery a:link, .gallery a:visited {
+	color: initial;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.desc {
+	padding: 12px;
+	text-align: center;
+}
+/*-------------------------------------------------------------------------*/
+
+/*-------------------------------NOVELTIES-----------------------------------*/
+.novelties {
+	display: initial;
+	background-color: white;
+	text-align: center;
+}
+
+.carousel-container {
+	width: 75%;
+	margin: auto;
+	margin-bottom: 40px;
+	border: 5px solid white;
+	overflow: hidden;
+}
+
+.carousel-slide {
+	display: flex;
+	width: 150%;
+}
+
+.carousel-slide .gallery {
+	animation: slide-up 3s ease;
+	background-color: #f1f1f1;
+	min-width: 16.1%;
+	max-width: 16.1%;
+	min-height: 220px;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#prevBtn {
+	position: absolute;
+	left: 7.5%;
+	margin-top: 85px;
+	background-color: #f1f1f1;
+	box-shadow: 0 2px 2px #888888;
+	color: black;
+	padding: 2px 10px;
+	font-size: 30px;
+	text-decoration: none;
+	text-align: center;
+	border: none;
+	border-radius: 50%;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+#prevBtn:hover {
+	background-color: black;
+	color: white;
+}
+
+#nextBtn {
+	position: absolute;
+	right: 7.5%;
+	margin-top: 85px;
+	background-color: #f1f1f1;
+	box-shadow: 0 2px 2px #888888;
+	color: black;
+	padding: 2px 10px;
+	font-size: 30px;
+	text-decoration: none;
+	text-align: center;
+	border: none;
+	border-radius: 50%;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+#nextBtn:hover {
+	background-color: black;
+	color: white;
+}
+/*-------------------------------------------------------------------------*/
+
+/*---------------------------ADVERTISEMENT---------------------------------------*/
+.advertisement{
+	text-align: center;
+	background-image: url("../images/ads_image.jpg");
+	padding: 15px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+/*-------------------------------------------------------------------------*/
+
+/*---------------------------CAREERS---------------------------------------*/
+.careers-row {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: white;
+}
+
+.contact {
+	flex: 35%;
+	padding: 20px;
+	padding-top: 40px;
+	margin-left: 5%;
+}
+.contact img {
+	width: 100px;
+	height: 100px;
+	margin-right: 40px;
+	margin-top: 20px;
+	margin-bottom: 60px; 
+}
+
+.careers {
+	flex: 55%;
+	padding: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-right: 5%;
+}
+
+.contact p, .careers p{
+	color: gray;
+}
+.contact a, .careers a{
+	color: black;
+}
+.contact a:hover, .careers a:hover{
+	color: greenyellow;
+}
+/*--------------------------------------------------------------------------*/
+
+/*------------------------------FOOTER--------------------------------------*/
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #ddd;
+	color: gray;
+}
+.footer a {
+	color: gray;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: greenyellow;
+}
+
+.btnNetworking button{
+	box-shadow: 0 2px 2px #888888;
+	background-color: #333;
+	color: white;
+	padding: 4px 8px;
+	font-size: 12px;
+	text-decoration: none;
+	text-align: center;
+	border: none;
+	border-radius: 50%;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	margin-bottom: 40px;
+}
+/*--------------------------------------------------------------------------*/
+
+/*--------------------Responsive layout-------------------------------------*/
+@media screen and (max-width: 1200px) {
+	.about {
+		flex: 40%;
+		margin-left: 0%;
+	}
+	.premium {
+		flex: 60%;
+		margin-right: 0%;
+	}
+	.contact {
+		flex: 40%;
+		margin-left: 0%;
+	}
+	.careers {
+		flex: 60%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-right: 0%;
+	}
+	.carousel-slide .gallery {
+		min-width: 16%;
+		max-width: 16%;
+		min-height: 180px;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.navbar {
+		flex-direction: column;
+		position: static;
+	}
+	.dropdown-content {
+		left:0;
+		right:0;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.dropdown-content a {
+		text-align:center;
+	}
+	.about {
+		flex: 100%;
+	}
+	.premium {
+		flex: 100%;
+	}
+	.contact {
+		flex: 100%;
+	}
+	.careers {
+		flex: 100%;
+	}
+}
+/*-------------------------------------------------------------------------*/
+
+

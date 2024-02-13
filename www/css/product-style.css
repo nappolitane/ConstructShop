@@ -1,0 +1,86 @@
+body {
+	font-size: 100%;
+}
+
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+
+/*-------------------------------PRODUCT SHOP-------------------------------*/
+.product-shop-row {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #f1f1f1;
+}
+
+.product-shop {
+	flex: 52.5%;
+	padding: 20px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 10%;
+	margin-right: 2.5%;
+}
+.product-shop img {
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-right: 50px;
+}
+.product-shop ul{
+	color: gray;
+}
+
+.product-add {
+	font-size: 125%;
+	flex: 22.5%;
+	padding: 20px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 2.5%;
+	margin-right: 10%;
+	background-color: white;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+.product-add input {
+	width: 60px;
+	padding: 5px;
+	font-size: 14px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+.add-in-cart-btn {
+	display: block;
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	border: none;
+	background: #333;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.add-in-cart-btn:hover {
+	background: gray;
+}
+/*--------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+	.product-add{
+		flex: 90%;
+		margin-right:5%;
+		margin-left: 5%;
+	}
+	.product-shop{
+		flex: 90%;
+		margin-right:5%;
+		margin-left: 5%;
+	}
+}
+

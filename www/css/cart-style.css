@@ -1,0 +1,131 @@
+body {
+	font-size: 100%;
+}
+
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+
+#table {
+	border-collapse: collapse;
+	width: 100%;
+}
+/*ALL tds and ths*/
+#table td, th {
+	border: none;
+	text-align: left;
+	padding: 10px;
+}
+
+#table tr {
+	border: 1px solid #dddddd;
+}
+/*ALL ths inside trs*/
+#table tr th {
+	border-bottom: 1px solid white;
+}
+#table tr th:last-child {
+	border: 1px solid #dddddd;
+}
+
+#table tr:last-child {
+	background-color: #f1f1f1;
+}
+
+#table th button{
+	font-size: 16px;
+	text-align: left;
+	color: red;
+	background: none;
+	margin: 0;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+#table th button:hover, button:focus{
+	text-decoration: underline;
+}
+
+#table td img {
+	width: 120px;
+	height: 120px;
+}
+
+/*-------------------------------CART-------------------------------*/
+.cart-content-row {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #f1f1f1;
+}
+
+.cart-content {
+	flex: 52.5%;
+	padding: 20px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 10%;
+	margin-right: 2.5%;
+	background-color: white;
+}
+
+.buy-content {
+	flex: 22.5%;
+	padding: 20px;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	margin-left: 2.5%;
+	margin-right: 10%;
+	background-color: white;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+#cart-buy-btn {
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	border: none;
+	background: #333;
+	border-radius: 4px;
+	cursor: pointer;
+}
+#cart-buy-btn:hover {
+	background: gray;
+}
+
+#table input{
+	width: 60px;
+}
+
+div.cart-content .error {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #A94442;
+	color: #A94442;
+	background: #F2DEDE;
+	text-align: left;
+	border-radius: 5px;
+}
+/*--------------------------------------------------------------------------*/
+
+@media screen and (max-width: 730px) {
+	.cart-content {
+		flex: 90%;
+		margin-left: 5%;
+		margin-right:5%;
+	}
+	.buy-content {
+		flex: 90%;
+		margin-left: 5%;
+		margin-right:5%;
+	}
+}

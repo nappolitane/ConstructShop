@@ -1,0 +1,102 @@
+body {
+	font-size: 100%;
+}
+
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+
+/*-------------------------------MARCI-------------------------------*/
+.trademarks-row {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #f1f1f1;
+}
+
+.summary-content {
+	flex: 50%;
+	padding: 20px;
+	margin-left: 5%;
+}
+.summary-content img {
+	max-width: 100%;
+	max-height: auto;
+}
+
+.trademarks-content {
+	flex: 40%;
+	padding: 20px;
+	margin-right: 5%;
+}
+
+.summary-content p, .trademarks-content p, .trademarks-content ul {
+	color: gray;
+}
+/*--------------------------------------------------------------------------*/
+
+/*-----------------------------------SERVICES-------------------------------*/
+.services-row {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #f1f1f1;
+}
+
+.services-content {
+	flex: 90%;
+	padding: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.services-content p{
+	color: gray;
+}
+.services-content img {
+	width: 300px;
+	height: 200px;
+	margin-left: 20px;
+}
+/*-------------------------------------------------------------------------*/
+
+/*----------------------------------PARTNERS-------------------------------*/
+.partners-row {
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #f1f1f1;
+}
+
+.partners-content {
+	flex: 90%;
+	padding: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.partners-content p, .partners-content ul{
+	color: gray;
+}
+/*---------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+	.summary-content {
+		flex: 55%;
+		margin-left: 0%;
+	}
+	.trademarks-content {
+		flex: 45%;
+		margin-right: 0%;
+	}
+}
+@media screen and (max-width: 730px) {
+	.summary-content {
+		flex: 100%;
+	}
+	.trademarks-content {
+		flex: 100%;
+	}
+}
+

@@ -1,0 +1,90 @@
+.header {
+	position: relative;
+	top: 50px;
+	margin: auto;
+	width: 30%;
+	color: white;
+	background: #333;
+	text-align: center;
+	border: 1px 1px 0px 1px solid #B0C4DE;
+	border-radius: 10px 10px 0px 0px;
+	padding: 5px 20px 5px 20px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+form {
+	position: relative;
+	top: 50px;
+	margin: auto;
+	width: 30%;
+	background: white;
+	text-align: left;
+	border: 0px 1px 1px 1px solid #B0C4DE;
+	border-radius: 0px 0px 10px 10px;
+	padding: 5px 20px 5px 20px;
+	box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.input-group {
+	margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+	display: block;
+	text-align: left;
+}
+
+.input-group input {
+	height: 30px;
+	width: 93%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+
+.btn {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	border: none;
+	background: #333;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.btn:hover{
+	background: gray;
+}
+
+.error {
+	width: 93%;
+	padding: 10px;
+	border: 1px solid #A94442;
+	color: #A94442;
+	background: #F2DEDE;
+	text-align: left;
+	border-radius: 5px;
+}
+
+p {
+	font-size:90%;
+}
+
+body {
+	font-size: 120%;
+	background: #f1f1f1;
+}
+
+@media screen and (max-width: 730px) {
+	.header {
+		width: 60%;
+	}
+	form {
+		width: 60%;
+	}
+}
+
+
+
